@@ -1,0 +1,13 @@
+/* -Global style */
+
+body {
+    background-color: rgb(99, 118, 204);
+    height:100%;
+    max-width: 100%;
+    background: url(../images/running.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Aclonica', sans-serif;
+    color: white;
+    background-repeat: no-repeat;
+}
