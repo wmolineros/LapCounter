@@ -1,1 +1,8 @@
-document.getElementById("count").innerText = 2
+console.log("Connected!")
+
+
+
+
+
+
+
