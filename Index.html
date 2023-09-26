@@ -12,33 +12,34 @@
         <title>Lap Counter</title>
     </head>
         <body>
-            <h1>Lap Counter
+            <h1 class="counter">Lap Counter
                 <i class="fa-solid fa-stopwatch-20"></i>
             </h1>
             <div class="username">
-                <p class="username">Username <input id="username" type="text"></p>
+                <p class="username">Username: <input id="username" type="text"></p>
             </div>
             <div>
-                <p>Lap Distance in Meters = <input id="meters" type="number"></p>
+                <p class="username">Lap Distance in Meters = <input id="meters" type="number"></p>
+                <button class="submit" id="submit">Submit and Begin
+                </button>
             </div>
-            <button class="Submit">Submit and Begin</button>
-            <div class="lap-count-area">
+            <div class="lap-count-area" id="buttons">
                 <button class="lap-count">
                     <i class="fa-solid fa-check"></i>
+                    <br>Lap
                 </button>
-                <p>Lap</p>
                 <button class="lap-count">
                     <i class="fa-solid fa-recycle"></i>
+                    <br>Reset
                 </button>
-                <p>Reset</p>
                 <button class="lap-count">
                     <i class="fa-regular fa-clipboard"></i>
+                    <br>Record
                 </button>
-                <p>Record</p>
                 <button class="lap-count">
                     <i class="fa-solid fa-plus"></i>
+                    <br>New Opponent
                 </button>
-                <p>New Opponent</p>
             </div>
             <div class="ranking-area">
                 <h2>Ranking</h2>

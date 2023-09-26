@@ -1,14 +1,42 @@
 /* -Global style */
 
 body {
-    background-color: rgb(99, 118, 204);
     height:100%;
     max-width: 100%;
     background: url(../images/running.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     font-family: 'Martian Mono', monospace;
     color: white;
-    background-repeat: no-repeat;
+}
+
+.counter {
     text-align: center;
+    font-size: 5rem;
+}
+
+.submit {
+    justify-content: center;
+    align-items: center;
+}
+
+.lap-count-area {
+    background-color: #6e96b1a4;
+    box-sizing: border-box;
+    width: 85%;
+    height: 10vh;
+    max-height: 150px;
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+.lap-count {
+    display: inline-block;
+}
+
+#button {
+    color: green;
 }
