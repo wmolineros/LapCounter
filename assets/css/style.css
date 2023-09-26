@@ -14,24 +14,38 @@ body {
 .counter {
     text-align: center;
     font-size: 5rem;
+    text-transform: uppercase;
 }
 
 
 .submit {
     text-align: center;
+    font-family: 'Martian Mono', monospace;
+    padding-bottom: 10px;
 }
 
 .username {
     text-align: center;
+    background-color: #ebee23a4;
+    box-sizing: border-box;
+    height: 5vh;
+    max-height: 250px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 10px;
+    padding: 0%;
+    font-family: 'Martian Mono', monospace;
+    color: black;
 }
 
 .lap-count-area {
     background-color: #6e96b1a4;
     box-sizing: border-box;
     width: 55%;
-    height: 10vh;
-    max-height: 250px;
-    max-width: 400px;
+    height: 15vh;
+    max-height: 300px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
@@ -40,6 +54,15 @@ body {
 
 .lap-count {
     display: inline-block;
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
+    font-family: 'Martian Mono', monospace;
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-top: 5%;
+}
+
+.ranking-area {
+    text-align: center;
+}
 }
