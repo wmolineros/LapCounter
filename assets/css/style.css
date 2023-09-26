@@ -8,7 +8,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     font-family: 'Martian Mono', monospace;
-    color: white;
+    color: rgb(253, 253, 253);
 }
 
 .counter {
@@ -16,27 +16,30 @@ body {
     font-size: 5rem;
 }
 
+
 .submit {
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+}
+
+.username {
+    text-align: center;
 }
 
 .lap-count-area {
     background-color: #6e96b1a4;
     box-sizing: border-box;
-    width: 85%;
+    width: 55%;
     height: 10vh;
-    max-height: 150px;
-    max-width: 440px;
+    max-height: 250px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
+    font-family: 'Martian Mono', monospace;
 }
 
 .lap-count {
     display: inline-block;
-}
-
-#button {
-    color: green;
+    font-size: 16px;
+    text-align: center;
 }
