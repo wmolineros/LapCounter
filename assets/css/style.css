@@ -17,6 +17,10 @@ body {
     text-transform: uppercase;
 }
 
+#logo {
+    color:rgb(15, 186, 216)
+}
+
 
 .submit {
     text-align: center;
@@ -24,17 +28,31 @@ body {
     padding-bottom: 10px;
 }
 
+.submit-button {
+    font-family: 'Martian Mono', monospace;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #ee2382cb;
+}
+
+.submit-button:hover {
+    text-transform: uppercase;
+    border-color: white;
+    background-color: rgba(95, 92, 92, 0.562);
+    color: rgb(252, 238, 51);
+    font-weight: bold;
+}
+
 .username {
     text-align: center;
     background-color: #ebee23a4;
     box-sizing: border-box;
-    height: 5vh;
+    height: 60px;
     max-height: 250px;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto; 
-    margin-top: 10px;
-    padding: 0%;
+    margin-top: 25px;
     font-family: 'Martian Mono', monospace;
     color: black;
 }
@@ -66,21 +84,60 @@ body {
     text-align: center;
     box-sizing: border-box;
     background-color: rgba(51, 59, 66, 0.562);
-    width: 10%;
-    height: 20vh;
+    width: 550px;
+    height: 50pxh;
     max-height: 300px;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
+    margin-top: 15px;
  }
 
  #lap-button:hover {
     text-transform: uppercase;
     border-color: white;
-    background-color: rgba(255, 0, 64, 0.562);
+    background-color: rgba(221, 211, 213, 0.562);
     color: rgb(252, 238, 51);
     font-weight: bold;
  }
 
+ #reset-button:hover {
+    text-transform: uppercase;
+    border-color: white;
+    background-color: rgba(221, 211, 213, 0.562);
+    color: rgb(252, 238, 51);
+    font-weight: bold;
+ }
+
+ #record-button:hover {
+    text-transform: uppercase;
+    border-color: white;
+    background-color: rgba(221, 211, 213, 0.562);
+    color: rgb(252, 238, 51);
+    font-weight: bold;
+ }
+
+ #new-opponent-button:hover {
+    text-transform: uppercase;
+    border-color: white;
+    background-color: rgba(221, 211, 213, 0.562);
+    color: rgb(252, 238, 51);
+    font-weight: bold;
+ }
+
+ .scoresheet-button {
+    font-family: 'Martian Mono', monospace;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #ee2382cb;
+ }
+
+ .scoresheet-button:hover {
+    text-transform: uppercase;
+    border-color: white;
+    background-color: rgba(221, 211, 213, 0.562);
+    color: rgb(252, 238, 51);
+    font-weight: bold;
+ }
 

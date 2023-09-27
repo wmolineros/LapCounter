@@ -13,13 +13,17 @@
     </head>
         <body>
             <h1 class="counter">Lap Counter
-                <i class="fa-solid fa-stopwatch-20"></i>
+                <i class="fa-solid fa-stopwatch-20" id="logo"></i>
             </h1>
             <div class="username">
-                <p class="username">Username: <input id="username" type="text"></p>
+                <p class="username">
+                    <br>
+                    Username: <input id="username" type="text"></p>
             </div>
             <div class="submit">
-                <p class="username">Lap Distance in Meters = <input id="meters" type="number"></p>
+                <p class="username">
+                    <br>
+                    Lap Distance in Meters = <input id="meters" type="number"></p>
                 <button class="submit-button">Submit and Begin
                 </button>
             </div>
@@ -46,10 +50,7 @@
                 <h2>Ranking</h2>
                 <p>Distance Ran <span id="distance">0</span></p>
                 <p>Place <span id="placement">0</span></p>
-                <button>
-                    <i class="fa-solid fa-list"></i>
-                </button>
-                <p>Scoresheet</p>
+                <button class="scoresheet-button">Scoresheet </button>
             </div>
         </body>
         <script src="assets/js/script.js"></script>
