@@ -40,7 +40,7 @@ body {
 }
 
 .lap-count-area {
-    background-color: #6e96b1a4;
+    background-color: rgba(51, 59, 66, 0.562);
     box-sizing: border-box;
     width: 55%;
     height: 15vh;
@@ -64,5 +64,23 @@ body {
 
 .ranking-area {
     text-align: center;
-}
-}
+    box-sizing: border-box;
+    background-color: rgba(51, 59, 66, 0.562);
+    width: 10%;
+    height: 20vh;
+    max-height: 300px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+ }
+
+ #lap-button:hover {
+    text-transform: uppercase;
+    border-color: white;
+    background-color: rgba(255, 0, 64, 0.562);
+    color: rgb(252, 238, 51);
+    font-weight: bold;
+ }
+
+
