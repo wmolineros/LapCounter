@@ -3,7 +3,7 @@
 body {
     height:100%;
     max-width: 100%;
-    background: url(../images/running.jpg);
+    background: url(assets/images/running.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -80,23 +80,59 @@ body {
     margin-top: 5%;
 }
 
-/* Sets the containers height and width */
 .base-timer {
-    margin-left: 600px;;
-    height: 500px;
+    margin-left: 800px;
+    position: relative;
     width: 300px;
+    height: 300px;
   }
   
-  /* Removes SVG styling that would hide the time label */
+  .base-timer__svg {
+    transform: scaleX(-1);
+  }
+  
   .base-timer__circle {
     fill: none;
     stroke: none;
   }
   
-  /* The SVG path that displays the timer's progress */
   .base-timer__path-elapsed {
     stroke-width: 7px;
-    stroke: rgb(47, 182, 192);
+    stroke: grey;
+  }
+  
+  .base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+  }
+  
+  .base-timer__path-remaining.green {
+    color: rgb(47, 182, 192);
+  }
+  
+  .base-timer__path-remaining.orange {
+    color: rgb(252, 238, 51)e;
+  }
+  
+  .base-timer__path-remaining.red {
+    color: #ee2382cb;
+  }
+  
+  .base-timer__label {
+    margin-left: 5px;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
   }
 
 .ranking-area {
