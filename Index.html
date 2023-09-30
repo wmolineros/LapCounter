@@ -44,10 +44,20 @@
                     <i class="fa-solid fa-plus"></i>
                     <br>New Opponent
                 </button>
-                
+                <div class="base-timer">
+                    <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <g class="base-timer__circle">
+                        <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />
+                      </g>
+                    </svg>
+                    <span>
+                      <!-- Remaining time label -->
+                    </span>
+                  </div>
             </div>
             <div class="ranking-area">
                 <h2>Ranking</h2>
+                <p>Time <span id="time">00:00</span></p>
                 <p>Distance Ran <span id="distance">0</span></p>
                 <p>Place <span id="placement">0</span></p>
                 <button class="scoresheet-button">Scoresheet </button>

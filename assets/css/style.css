@@ -18,7 +18,7 @@ body {
 }
 
 #logo {
-    color:rgb(15, 186, 216)
+    color:rgb(47, 182, 192);
 }
 
 
@@ -79,6 +79,25 @@ body {
     margin-left: 15px;
     margin-top: 5%;
 }
+
+/* Sets the containers height and width */
+.base-timer {
+    margin-left: 600px;;
+    height: 500px;
+    width: 300px;
+  }
+  
+  /* Removes SVG styling that would hide the time label */
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  /* The SVG path that displays the timer's progress */
+  .base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: rgb(47, 182, 192);
+  }
 
 .ranking-area {
     text-align: center;
@@ -141,3 +160,12 @@ body {
     font-weight: bold;
  }
 
+ @media (max-width: 320px) {
+
+    .lap-count-area {
+        width: 75%;
+        height: 75%;
+        margin: 10px auto;
+    }
+
+}
