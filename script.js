@@ -2,16 +2,17 @@ const FULL_DASH_ARRAY = 283;
 const WARNING_THRESHOLD = 10;
 const ALERT_THRESHOLD = 5;
 
+
 const COLOR_CODES = {
   info: {
-    color: "green"
+    color: "blue"
   },
   warning: {
-    color: "orange",
+    color: "yellow",
     threshold: WARNING_THRESHOLD
   },
   alert: {
-    color: "red",
+    color: "pink",
     threshold: ALERT_THRESHOLD
   }
 };
@@ -89,4 +90,20 @@ function setCircleDasharray() {
     .getElementById("base-timer-path-remaining")
     .setAttribute("stroke-dasharray", circleDasharray);
 }
-})
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  let buttons = document.getElementsByTagName("button");
+
+  for (let button of buttons) {
+      button.addEventListener("click", function() {
+          if (this.getAttribute("data-type") === "lap") {
+              checkAnswer();
+          } else {
+              let gameType = this.getAttribute("data-type");
+              runGame(gameType);
+          }
+      });
+  }
+});
+

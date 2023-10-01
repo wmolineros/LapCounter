@@ -15,65 +15,19 @@
             <h1 class="counter">Lap Counter
                 <i class="fa-solid fa-stopwatch-20" id="logo"></i>
             </h1>
-            <div class="username">
+            <form class="username" action="lap.html">
                 <p class="username">
                     <br>
-                    Username: <input id="username" type="text"></p>
-            </div>
+                    Username: <input id="username" type="text" placeholder="Enter your username">
+                </p>
             <div class="submit">
                 <p class="username">
                     <br>
-                    Lap Distance in Meters = <input id="meters" type="number"></p>
-                <button class="submit-button">Submit and Begin
-                </button>
+                    Lap Distance in Meters = <input id="meters" type="number" placeholder="Enter Lap Distance">
+                </p>
+                <button onclick="window.location.href='lap.html'" data-type="submit" class="submit-button">Submit and Begin</button>
             </div>
-            <div class="lap-count-area" id="buttons">
-                <button class="lap-count" id="lap-button">
-                    <i class="fa-solid fa-check"></i>
-                    <br>Lap
-                </button>
-                <button class="lap-count" id="reset-button">
-                    <i class="fa-solid fa-recycle"></i>
-                    <br>Reset
-                </button>
-                <button class="lap-count" id="record-button">
-                    <i class="fa-regular fa-clipboard"></i>
-                    <br>Record
-                </button>
-                <button class="lap-count" id="new-opponent-button">
-                    <i class="fa-solid fa-plus"></i>
-                    <br>New Opponent
-                </button>
-            </div>
-        <div id="app">
-            <div class="base-timer">
-                <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <g class="base-timer__circle">
-                    <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
-                    <path
-                      id="base-timer-path-remaining"
-                      stroke-dasharray="283"
-                      class="base-timer__path-remaining ${remainingPathColor}"
-                      d="
-                        M 50, 50
-                        m -45, 0
-                        a 45,45 0 1,0 90,0
-                        a 45,45 0 1,0 -90,0
-                      "
-                    ></path>
-                  </g>
-                </svg>
-                <span id="base-timer-label" class="base-timer__label">
-                    ${formatTime(timeLeft)}</span>
-              </div>
-            <div class="ranking-area">
-                <h2>Ranking</h2>
-                <p>Time <span id="time">00:00</span></p>
-                <p>Distance Ran <span id="distance">0</span></p>
-                <p>Place <span id="placement">0</span></p>
-                <button class="scoresheet-button">Scoresheet </button>
-            </div>
-        </div>
+            </form>
         </body>
         <script src="script.js"></script>
         <script src="https://kit.fontawesome.com/771bafd7be.js" crossorigin="anonymous"></script>
