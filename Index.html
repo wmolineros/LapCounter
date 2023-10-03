@@ -15,7 +15,7 @@
             <h1 class="counter">Lap Counter
                 <i class="fa-solid fa-stopwatch-20" id="logo"></i>
             </h1>
-            <form class="username" action="lap.html">
+            <form method="POST" class="username" id="details">
                 <p class="username">
                     <br>
                     Username: <input id="username" type="text" placeholder="Enter your username" required>
@@ -25,7 +25,7 @@
                     <br>
                     Lap Distance in Meters = <input id="meters" type="number" placeholder="Enter Lap Distance" required>
                 </p>
-                <button data-type="submit" class="submit-button">Submit and Begin</button>
+                <button data-type="submit" class="submit-button" onclick="return details" id="sbmt-button">Submit and Begin</button>
             </div>
             </form>
         </body>

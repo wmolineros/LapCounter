@@ -92,18 +92,24 @@ function setCircleDasharray() {
 }
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  let buttons = document.getElementsByTagName("button");
+let details = document.getElementById("details");
 
-  for (let button of buttons) {
-      button.addEventListener("click", function() {
-          if (this.getAttribute("data-type") === "submit") {
-            alert("You clicked submit!");
-          } else {
-            let gameType = this.getAttribute("data-type");
-            alert('You clicked ${gameType}')
-          }
-      });
-  }
-});
+details.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let username = document.getElementById("username"); 
+  let meters = document.getElementById("meters");
+
+  if (username.value == "" || meters.value == "") {
+    alert("Ensure you input a value in both fields!");
+    return false;
+  } else {
+    window.location.href  = "lap.html";
+
+    }
+  });
+
+  
+
+ 
 
