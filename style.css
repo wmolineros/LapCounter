@@ -158,21 +158,6 @@ body {
     font-weight: bold;
  }
 
- #reset-button:hover {
-    text-transform: uppercase;
-    border-color: white;
-    background-color: rgba(221, 211, 213, 0.562);
-    color: rgb(252, 238, 51);
-    font-weight: bold;
- }
-
- #record-button:hover {
-    text-transform: uppercase;
-    border-color: white;
-    background-color: rgba(221, 211, 213, 0.562);
-    color: rgb(252, 238, 51);
-    font-weight: bold;
- }
 
  #new-opponent-button:hover {
     text-transform: uppercase;
