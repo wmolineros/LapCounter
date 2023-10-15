@@ -110,29 +110,9 @@ details.addEventListener("submit", (e) => {
   });
 
 
-  var buttons = 0; 
-  var laprn;
-
-  function increaseLap() {
-    buttons += 1;
-    document.querySelector("#lapVal").textContent = buttons;
-  }
-  
-  function getLap() {
-  laprn = Math.floor(Math.random() + 1);
-  document.querySelector("#lapVal").textContent = laprn;
-  } 
-  
-  document.querySelector("lap-button") 
-    .addEventListener("click", function(dets){
-       var clickedlap = Number(dets.target.textContent);
-       if(clickedlap == laprn) {
-        increaseLap();
-        getLap();
-       }
-    });
-
-    getLap();
-
+function lapMe() {
+  var count = document.getElementById('lapVal');
+  count.innerHTML++
+};
  
 
