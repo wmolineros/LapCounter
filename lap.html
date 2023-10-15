@@ -18,12 +18,15 @@
             <div class="lap-count-area" id="buttons">
                 <button class="lap-count" id="lap-button" data-type="lap">
                     <i class="fa-solid fa-check"></i>
-                    <br>Lap
+                    <br>Lap</br>
                 </button>
+                <p id="lapVal">0</p>
+            </div>
+            <div class="opponent-area">
                 <a href="Index.html">
                     <button class="lap-count" id="new-opponent-button" data-type="opponent">
                         <i class="fa-solid fa-plus"></i>
-                        <br>New Opponent
+                        <br>New Opponent</br>
                     </button>
                 </a>
             </div>
@@ -48,11 +51,6 @@
                 <span id="base-timer-label" class="base-timer__label">
                     ${formatTime(timeLeft)}</span>
               </div>
-            <div class="ranking-area">
-                <h2>Ranking</h2>
-                <p>Laps Ran</p>
-                <p>Distance Ran <span id="distance">0</span></p>
-            </div>
         </div>
         </body>
         <script src="script.js"></script>
