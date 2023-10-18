@@ -1,3 +1,4 @@
+// Countdown Timer
 const FULL_DASH_ARRAY = 283;
 const WARNING_THRESHOLD = 10;
 const ALERT_THRESHOLD = 5;
@@ -92,6 +93,8 @@ function setCircleDasharray() {
 }
 });
 
+// Form details
+
 let details = document.getElementById("details");
 
 details.addEventListener("submit", (e) => {
@@ -99,20 +102,31 @@ details.addEventListener("submit", (e) => {
 
   let username = document.getElementById("username"); 
   let meters = document.getElementById("meters");
+  let result = document.getElementById("result");
 
   if (username.value == "" || meters.value == "") {
     alert("Ensure you input a value in both fields!");
     return false;
   } else {
     window.location.href  = "lap.html";
+    result.innerHTML=(`Wow, you username is  ${username} and your password is ${meters.value}`);
 
     }
   });
 
+// Lap Details
 
 function lapMe() {
   var count = document.getElementById('lapVal');
   count.innerHTML++
+  if (TIME_LIMIT > 0) {
+    TIME_LIMIT--;
+    document.querySelector("#base-timer-label").textContent = TIME_LIMIT;
+  }
+  else {
+    clearInterval(timerInt);
+    alert("Time has ended");
+  }
 };
  
 
