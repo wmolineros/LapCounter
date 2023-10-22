@@ -64,21 +64,47 @@ body {
     width: 55%;
     height: 15vh;
     max-height: 300px;
-    max-width: 500px;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
     font-family: 'Martian Mono', monospace;
 }
 
+.distance {
+  background-color: rgba(51, 59, 66, 0.562);
+  box-sizing: border-box;
+  width: 35%;
+  height: 5vh;
+  max-height: 300px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1%;
+  font-family: 'Martian Mono', monospace;
+}
+
 .lap-count {
-    display: inline-block;
+    background-color: rgba(241, 98, 62, 0.623);
+    box-sizing: border-box;
+    width: 80%;
+    height: 8vh;
+    max-height: 300px;
+    max-width: 500px;
+    margin-left: 20px;
+    margin-right: auto;
+    padding: 1%;
     font-size: 15px;
     text-align: center;
     font-family: 'Martian Mono', monospace;
     text-transform: uppercase;
-    margin-left: 80px;
-    margin-top: 5%;
+}
+
+.opponent-area {
+  margin-left: 820px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 250px;
 }
 
 .base-timer {
@@ -153,21 +179,7 @@ body {
     font-weight: bold;
  }
 
- .scoresheet-button {
-    font-family: 'Martian Mono', monospace;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: #ee2382cb;
- }
-
- .scoresheet-button:hover {
-    text-transform: uppercase;
-    border-color: white;
-    background-color: rgba(221, 211, 213, 0.562);
-    color: rgb(252, 238, 51);
-    font-weight: bold;
- }
-
+ 
  @media (max-width: 320px) {
 
     .lap-count-area {

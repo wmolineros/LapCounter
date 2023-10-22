@@ -128,5 +128,10 @@ function lapMe() {
     alert("Time has ended");
   }
 };
+
+function display() {
+  var username = document.getElementById("username").value;
+  document.getElementById("printhere").innerHTML = username;
+};
  
 
