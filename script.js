@@ -102,14 +102,12 @@ details.addEventListener("submit", (e) => {
 
   let username = document.getElementById("username"); 
   let meters = document.getElementById("meters");
-  let result = document.getElementById("result");
 
   if (username.value == "" || meters.value == "") {
     alert("Ensure you input a value in both fields!");
     return false;
   } else {
     window.location.href  = "lap.html";
-    result.innerHTML=(`Wow, you username is  ${username} and your password is ${meters.value}`);
 
     }
   });
@@ -134,4 +132,10 @@ function display() {
   document.getElementById("printhere").innerHTML = username;
 };
  
-
+$(".job-form").each(function(index, item) {
+  //get values..
+  var details = parseInt($(this).find("[name=username]").val());
+  var distance = parseInt($(this).find("[rundistance]").val());
+  //add total to required input
+  $(this).find("[name=result").val(details * distance)
+});
