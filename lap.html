@@ -15,13 +15,15 @@
             <h1 class="counter">Lap Counter
                 <i class="fa-solid fa-stopwatch-20" id="logo"></i>
             </h1>
-            <p id="printhere"></p>
+            <div>
+                <div id="form-box"></div>
+            </div>
             <div class="lap-count-area" id="count">
                 <button class="lap-count" id="lap-button" data-type="lap" onclick="lapMe()">
                     <i class="fa-solid fa-check"></i>
-                    <br id="newlap">Lap</br>
+                    <br id="newlap">Lap
                 </button>
-                <p id="lapVal">0</p>
+                <p id="lapVal" name="lapvalue">0</p>
             </div>
             <div class="distance">
                 <p>Distance Ran:   <span id="result" name="result">0</span></p>

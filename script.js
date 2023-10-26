@@ -30,7 +30,7 @@ startTimer();
 
 function onTimesUp() {
   clearInterval(timerInterval);
-}
+}};
 
 function startTimer() {
   timerInterval = setInterval(() => {
@@ -117,25 +117,22 @@ details.addEventListener("submit", (e) => {
 function lapMe() {
   var count = document.getElementById('lapVal');
   count.innerHTML++
-  if (TIME_LIMIT > 0) {
-    TIME_LIMIT--;
-    document.querySelector("#base-timer-label").textContent = TIME_LIMIT;
-  }
-  else {
-    clearInterval(timerInt);
-    alert("Time has ended");
-  }
 };
 
-function display() {
-  var username = document.getElementById("username").value;
-  document.getElementById("printhere").innerHTML = username;
-};
+function welcomeDetails() {
+  let welcomeBox = document.getElementById('form-box');
+  let welcomeMessage = `
+    <h2>Welcome to the lap counter ${username}</h2>`;
+  
+    welcomeBox.innerHTML = welcomeMessage;//Set the welcome message displayed to the user
+    welcomeDetails();
+}
+
  
 $(".job-form").each(function(index, item) {
   //get values..
-  var details = parseInt($(this).find("[name=username]").val());
-  var distance = parseInt($(this).find("[rundistance]").val());
+  var meters = parseInt($(this).find("[name=rundistance]").val());
+  var lap = parseInt($(this).find("[name=lapvalue").val());
   //add total to required input
-  $(this).find("[name=result").val(details * distance)
+  $(this).find("[name=result").val(meters * lap)
 });
