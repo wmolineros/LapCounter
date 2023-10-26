@@ -30,7 +30,7 @@ startTimer();
 
 function onTimesUp() {
   clearInterval(timerInterval);
-}};
+}
 
 function startTimer() {
   timerInterval = setInterval(() => {
@@ -119,6 +119,9 @@ function lapMe() {
   count.innerHTML++
 };
 
+
+// Values not actualising to be worked on at a later point 
+
 function welcomeDetails() {
   let welcomeBox = document.getElementById('form-box');
   let welcomeMessage = `
@@ -126,7 +129,7 @@ function welcomeDetails() {
   
     welcomeBox.innerHTML = welcomeMessage;//Set the welcome message displayed to the user
     welcomeDetails();
-}
+};
 
  
 $(".job-form").each(function(index, item) {

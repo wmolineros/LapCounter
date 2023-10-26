@@ -47,10 +47,10 @@ This javascript project held a lot of challenges for me both technically and per
 
 ## Site Deployment
 **Step-By-Step**
-1. Go to Github "Horror Movie Quiz" repositry space. 
+1. Go to Github "Lap Counter" repositry space. 
 2. Select "Settings" above "Go to file" button. 
 3. Scroll down to Github pages and select the "Check it out here!" link. 
 4. Select "main" branch. 
 5. Select "save" to deploy the published site details. 
 
-[Horror Movie Quiz](https://wmolineros.github.io/Horror-movie-autogenerator/) was created by Wanda Molineros. This page was last edited on 25 September 2022, at 09:50 (GMT).
+[Lap Counter](https://wmolineros.github.io/Horror-movie-autogenerator/) was created by Wanda Molineros. This page was last edited on 26 October 2023, at 23:28 (GMT).
